@@ -10,7 +10,6 @@ class bcolors:
     ENDC = '\033[0m'
     CYAN = '\033[36m'
 
-
 class PathIter(object):
     def __init__(self,check_path):
         self.check_path = check_path
@@ -26,8 +25,6 @@ class PathIter(object):
         if os.path.islink(to_check):
             self.check_path=os.readlink(to_check)
         return out
-
-
       
 def getLinks(link_name):
     cwd_save=os.getcwd()
@@ -46,7 +43,6 @@ def getLinks(link_name):
        print i
     os.chdir(cwd_save)
 
-
 if __name__ == "__main__":
     argv_list = sys.argv[1:]
     if argv_list:
@@ -59,4 +55,3 @@ if __name__ == "__main__":
     else:
         print("Error: At least one path needs to be specified.")
         sys.exit(-1)
-
