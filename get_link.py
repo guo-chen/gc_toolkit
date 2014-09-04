@@ -17,6 +17,8 @@ class PathIter(object):
         return self
     def next(self):
         out=os.path.abspath(self.check_path)
+        if self.check_path.endswith(os.sep):
+            self.check_path=self.check_path.rstrip(os.sep) # Right strip the os.sep if the check_path ends with it. In case of the link is created as 'ln -s xx/xx/ xx'
         tmp_path=os.path.dirname(self.check_path)
         if not tmp_path:
             tmp_path=os.getcwd()
