@@ -1,10 +1,10 @@
 gc_toolkit
 ========
 
-##<code>symlink_tracer</code>
+##symlink_tracer
 
 ####DESCRIPTION
->><code>symlink_tracer</code> is used to get the trails of given symbolic links (other files are also valid) until reaching their targets. It will skip dead links or non-existing targets.
+<code>symlink_tracer</code> is used to get the trails of given symbolic links (other files are also valid) until reaching their targets. It will skip dead links or non-existing targets.
 
 ####FORMAT
 <pre>
