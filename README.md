@@ -3,16 +3,16 @@ gc_toolkit
 
 ##symlink_tracer
 
-####DESCRIPTION
+#####DESCRIPTION
 <code>symlink_tracer</code> is used to get the trails of given symbolic links (other files are also valid) until reaching their targets. It will skip dead links or non-existing targets.
 
-####FORMAT
+#####FORMAT
 <pre>
 > symlink_tracer target1 [target2, target3 ...]
 At least one target should be specified.
 </pre>
 
-####EXAMPLE
+#####EXAMPLE
 <pre>
 > symlink_tracer link1 link2 link3
 -----link1-----
