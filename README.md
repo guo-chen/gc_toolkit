@@ -1,7 +1,7 @@
 gc_toolkit
 ========
 
-<b>get_link</b>
+<b>symlink_tracer</b>
 
 DESCRIPTION
 
@@ -10,13 +10,13 @@ It will skip dead links or non-existing targets.
 
 FORMAT
 
->\> get_link target1 [target2, target3 ...]
+>\> symlink_tracer target1 [target2, target3 ...]
 
 >At least one target should be specified.
 
 EXAMPLE
 
->\> get_link link1 link2 link3
+>\> symlink_tracer link1 link2 link3
 
 >-----link1-----
 
