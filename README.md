@@ -16,11 +16,11 @@ At least one target should be specified.
 <pre>
 > symlink_tracer link1 link2 link3
 -----link1-----
->/home/gc/link1
+/home/gc/link1
 >>/home/gc/dir/link_in_dir
 >>>>/home/gc/dir2/target
 link2 does not exist, skipping ...
 -----link3-----
->/home/gc/link3
+/home/gc/link3
 >>/usr/bin/python
 </pre>
