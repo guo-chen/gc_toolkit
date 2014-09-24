@@ -23,7 +23,7 @@ class PathIter(object):
         eval_path, valid = validatePath(self.check_path)
         # print eval_path, valid # for debugging
         if valid == False:
-            print("%sOne of the parent directories is symbolic link, retracing from it.%s"%(bcolors.WARNING,bcolors.ENDC))
+            print("%sOne of the parent directories is a symbolic link, retracing from it.%s"%(bcolors.WARNING,bcolors.ENDC))
             self.check_path=eval_path
         tmp_path=os.path.dirname(self.check_path)
         if not tmp_path:
