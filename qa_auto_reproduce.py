@@ -5,7 +5,7 @@ import os, sys, optparse
 TOOL_VERSIONS_LIST = ['dev','2014.12','2014.06-SP2','2014.06-SP1','2014.06','2013.12','2013.06']
 
 if __name__ == "__main__":
-    usage = "Usage: %prog [options] caselist TOOL_version"
+    usage = "%prog [options] caselist TOOL_version"
     description = "This is used to generate a shell script and case list to run regression robot to reproduce failed cases listed in daily work panel"
     parser = optparse.OptionParser(usage=usage, description=description)
     parser.add_option("-r", "--run", action="store_true", dest="run", default=False, help="It will run the generated script if -r is specified")
@@ -26,12 +26,6 @@ if __name__ == "__main__":
             case_list = [line.strip().split('/') for line in open(input_file,'r')]
         except IOError:
             parser.error("caselist file (arg1) does not exist!")
-
-#        try:
-#            output_handler=open(output_file, 'w')
-#        except IOError:
-#            print("Error: opening output file (arg2) failed!")
-#            sys.exit(-1)
 
         case_dict={}
         for item in case_list:
