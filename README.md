@@ -37,7 +37,7 @@ In this tool the actual name of the product name and the regression robot name i
 #####SYNOPSIS
 <pre>
 > qa_auto_reproduce --help
-usage: Usage: qa_auto_reproduce [options] caselist TOOL_version
+usage: qa_auto_reproduce [options] caselist TOOL_version
 
 This is used to generate a shell script and case list to run regression
 framework robot to reproduce failed cases listed in daily work panel
@@ -45,5 +45,5 @@ framework robot to reproduce failed cases listed in daily work panel
 options:
   -h, --help  show this help message and exit
   -r, --run   It will run the generated script if -r is specified
-usage: Usage: qa_auto_reproduce [options] caselist TOOL_version
+usage: qa_auto_reproduce [options] caselist TOOL_version
 </pre>
